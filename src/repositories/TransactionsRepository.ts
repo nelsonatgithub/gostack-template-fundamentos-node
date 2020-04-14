@@ -24,7 +24,7 @@ const transactionsReducer: (
         total: balance.total - transaction.value,
       };
     default:
-      break;
+      return balance;
   }
   return balance;
 };
